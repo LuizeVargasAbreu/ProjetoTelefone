@@ -1,16 +1,13 @@
 package projetotelefone;
 
 import javax.swing.JOptionPane;
+
 public class ProjetoTelefone {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-         
+
         Smartphone iphone6 = new Smartphone();
-        Celular cel = new Celular ();
+        Celular cel = new Celular();
         iphone6.setCor("Preto");
         iphone6.setDespertador(true);
         iphone6.setInternet2g(true);
@@ -19,11 +16,26 @@ public class ProjetoTelefone {
         iphone6.setPeso(3.2);
         iphone6.setResolucao_tela("1920 x 800");
         iphone6.setWi_fi(true);
-        
-        JOptionPane.showMessageDialog(null, iphone6.resumo());
-     
-        
-    }
-    }
-    
 
+        TelefoneSemFio semfio = new TelefoneSemFio();
+        semfio.setAlcance(2.5);
+        semfio.setSecret_eletronica(true);
+        semfio.setCor("VERDE");
+        semfio.setModelo("VAI LONGE");
+        semfio.setPeso(3.5);
+
+        Telefone tetelf = new Telefone();
+        tetelf.setCor("Branco");
+        tetelf.setModelo("Velho");
+        tetelf.setPeso(10.5);
+
+        exibeResumao(iphone6);
+
+    }
+
+    public static void exibeResumao(Telefone tel) {
+        JOptionPane.showMessageDialog(null, tel.resumo());
+
+    }
+
+}

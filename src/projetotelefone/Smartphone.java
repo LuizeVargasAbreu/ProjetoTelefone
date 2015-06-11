@@ -1,15 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package projetotelefone;
 
-/**
- *
- * @author Aluno
- */
     public class Smartphone extends Celular{
 
     private Boolean internet2g;
@@ -46,7 +36,7 @@ package projetotelefone;
         this.resolucao_tela = null;
     }
     
-    public String resumo ()
+  /*  public String resumo ()
     {
         if (this.Wi_fi == true && this.internet2g == true)
         {
@@ -56,6 +46,10 @@ package projetotelefone;
         {
             return "NÃO";
         }
-        return super.resumo() + "\nInternet 2g: " + this.internet2g + "\n Wi-fi: " + this.Wi_fi + "\nResolução da Tela: " + this.resolucao_tela; 
+        return super.resumo() + "\nInternet 2g: " + this.internet2g + "\n Wi-fi: " + this.Wi_fi + "\nResolução da Tela: " + this.resolucao_tela; */
+    public String resumo()
+    {
+        return super.resumo() + " -  " + this.resolucao_tela + " - WI FI:" + this.Wi_fi;
     }
-}
+    }
+

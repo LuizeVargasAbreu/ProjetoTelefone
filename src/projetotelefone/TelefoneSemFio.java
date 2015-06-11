@@ -1,15 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package projetotelefone;
 
-/**
- *
- * @author Aluno
- */
 public class TelefoneSemFio extends Telefone{
     
     
@@ -39,7 +29,7 @@ public class TelefoneSemFio extends Telefone{
         this.alcance = 0.0;
     }
     
-    public String resumo ()
+  /*  public String resumo ()
     {
         if (this.secret_eletronica == true )
         {
@@ -50,6 +40,10 @@ public class TelefoneSemFio extends Telefone{
             return "NÃO";
         }
         
-        return super.resumo() + "\nSecretária Eletrônica: " + this.secret_eletronica + "\nAlcance: " + this.alcance;
+        return super.resumo() + "\nSecretária Eletrônica: " + this.secret_eletronica + "\nAlcance: " + this.alcance;*/
+     public String resumo()
+    {
+        return super.resumo() + " - Alcance" + this.alcance;
+    }
     }    
-}
+
