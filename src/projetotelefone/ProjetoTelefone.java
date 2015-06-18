@@ -6,7 +6,7 @@ public class ProjetoTelefone {
 
     public static void main(String[] args) {
 
-        Smartphone iphone6 = new Smartphone();
+       /* Smartphone iphone6 = new Smartphone();
         Celular cel = new Celular();
         iphone6.setCor("Preto");
         iphone6.setDespertador(true);
@@ -34,8 +34,24 @@ public class ProjetoTelefone {
     }
 
     public static void exibeResumao(Telefone tel) {
-        JOptionPane.showMessageDialog(null, tel.resumo());
+        JOptionPane.showMessageDialog(null, tel.resumo());*/
+        Loja loja = new Loja();
+// Se o catalogo for carregado antes vai ser exibido na tela        
+        loja.catalogarTelefone();
+        
+        //for (int i = 0; i < loja.getVelhos().size(); i++) {
+          //  System.out.println(loja.getVelhos().get(i).resumo());
+    //}
+        //for (Telefone velho : loja.getVelhos()) {
+          //      System.out.println(velho.resumo());
+           // }
+        
+        loja.catalogarCelular();
+            for (Celular celulares : loja.getCelulares()) {
+                System.out.println(celulares.resumo());                
+            }
+        }
 
     }
 
-}
+
